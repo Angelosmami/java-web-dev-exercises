@@ -6,28 +6,22 @@ public class Teacher {
     private String subject;
     private int yearsTeaching;
 
-    public String getFirstName(){
-        return firstName;
-    }
-    void setFirstName(String afirstName){
-        firstName = afirstName;
+    public String getFirstName(){ return this.firstName; }
+    public void setFirstName(String afirstName){
+        this.firstName = afirstName;
     }
     public String getLastName(){
-        return lastName;
+        return this.lastName;
     }
-    void setLastName(String alastName){
-        lastName = alastName;
-    }
+    public void setLastName(String alastName){ this.lastName = alastName; }
     public String getSubject(){
-        return subject;
+        return this.subject;
     }
-    void setSubject(String asubject){
-        subject = asubject;
+    public void setSubject(String asubject){
+        this.subject = asubject;
     }
-    public int getYearsTeaching(){
-        return yearsTeaching;
-    }
-    void setYearsTeaching(int ayearsTeaching){
+    public int getYearsTeaching(){ return this.yearsTeaching; }
+    public void setYearsTeaching(int ayearsTeaching){
         yearsTeaching = ayearsTeaching;
     }
 }

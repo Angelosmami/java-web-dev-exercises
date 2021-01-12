@@ -5,9 +5,9 @@ import java.util.HashMap;
 public class Course {
     //Student student = new Student("Jen",1,4.0);
 
-    public String message = "Welcome to class";
-    public String[] array = {"English", "Math", "Science"};
-    private ArrayList<Student> studentInfo = new ArrayList<>();
+    private String name;
+    private int numOfCredits;
+    private ArrayList<Student> students;
 
 
 
