@@ -1,4 +1,4 @@
-package CreatingMenu;
+package restaurant;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -22,4 +22,23 @@ public class Menu {
     public void setLastUpdated(Date lastUpdated) {this.lastUpdated = lastUpdated;}
 
 
+    public void addItem (MenuItem item){
+        this.menuItems.add (item);
+        this.lastUpdated = new Date();
+    }
+
+    public void removeItem (MenuItem item){
+        this.menuItems.remove(item);
+        this.lastUpdated = new Date();
+    }
+
+    @Override
+    public String toString() {
+        String returnString = "";
+        for (MenuItem item : this.menuItems){
+            returnString += item.toString() + "\n\n";
+        }
+        return returnString;
+    }
 }
+
